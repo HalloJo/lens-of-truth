@@ -22,4 +22,21 @@ body {
 .cursor.is-down {
   width: 80px;
   height: 80px;
+}
+.cursor.is-down span {
+  top: 80px;
+  left: 80px;
+}
+.cursor span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
