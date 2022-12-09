@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -6,6 +10,19 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   height: 100vh;
   cursor: none;
+  color: #fff;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 .pattern {
@@ -14,15 +31,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
   background-image: url(/assets/pattern.svg);
-  background-size: 3 0%;
+  background-size: 1000px;
+  -webkit-animation: backgroundMove 25s infinite linear;
+          animation: backgroundMove 25s infinite linear;
 }
 
+@-webkit-keyframes backgroundMove {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 2000px;
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 2000px;
+  }
+}
 .cursor {
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: #9013fe;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -51,4 +86,43 @@ canvas {
   width: 100%;
   height: 100%;
   mix-blend-mode: lighten;
+}
+
+.scratched-out {
+  mix-blend-mode: darken;
+}
+
+.info {
+  background-color: #9013fe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+}
+.bio .synopsis {
+  width: 50%;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.portret {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+}
+.portret .image {
+  width: 50%;
+  -webkit-clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+          clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
 }/*# sourceMappingURL=styles.css.map */
