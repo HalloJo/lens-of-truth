@@ -87,3 +87,8 @@ document.addEventListener("mouseup", () => {
   shrinkCursor();
   isMouseDown = false;
 });
+
+document.addEventListener("resize", () => {
+  setupCanvas(canvasIn);
+  setupCanvas(canvasOut);
+});
