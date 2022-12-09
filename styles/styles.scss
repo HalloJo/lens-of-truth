@@ -9,7 +9,10 @@ body {
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
   height: 100vh;
-  cursor: none;
+  // cursor: url("https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png"),
+  //   auto;
+  cursor: url("https://upload.wikimedia.org/wikibooks/en/a/a7/OoT_Lens_of_Truth_icon.png"),
+    auto;
   color: #fff;
   overflow: hidden;
 }
@@ -46,10 +49,10 @@ h2 {
 }
 
 .cursor {
-  width: 10px;
-  height: 10px;
-  background-color: #9013fe;
-  border-radius: 50%;
+  // width: 10px;
+  // height: 10px;
+  // background-color: #9013fe;
+  // border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
