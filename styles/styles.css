@@ -117,8 +117,28 @@ canvas {
   height: 50%;
   box-sizing: border-box;
 }
-.portret .image {
+
+@-webkit-keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.image {
   width: 50%;
   -webkit-clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
           clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+  -webkit-animation: rotateImage 100s infinite linear;
+          animation: rotateImage 100s infinite linear;
 }/*# sourceMappingURL=styles.css.map */
